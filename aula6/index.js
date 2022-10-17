@@ -6,6 +6,12 @@
 // console.log("Ana teve 1 filho com " + nome + " em 2015.");
 // console.log("O filho de " + nome + " se chama Eduardo.");
 
-let nome;       //declaração da variável
-nome = "beatriz";       // inicialização da variável
-console.log(nome);
+//let nome;               declaração da variável
+//nome = "beatriz";        inicialização da variável
+// console.log(nome);
+// nome = "ana flavia";
+// console.log(nome);
+
+let nomeCliente = "Luiz";
+let nomecliente = "Otávio";
+console.log(nomeCliente, nomecliente);
