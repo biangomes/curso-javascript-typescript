@@ -58,3 +58,15 @@ console.log(`${nome} está testando template string, ela possui ${idade} anos.`)
 ```
 
 O recurso de colocar uma variável dentro da String através de crases e ${nome_variável} se chama **template strings**.
+
+### Aula 18: Let vs Var - Primeira diferença
+
+- Primeira diferença: `var` pode ser redeclarado, ao contrário de `let`.
+
+É possível declarar variáveis das seguintes formas:
+- `let variavel;`
+- `var variavel;`
+- `const constante;`
+- `variavel;`
+
+Porém, **não se recomenda usar a segunda e quarta forma**.
