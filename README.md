@@ -43,3 +43,18 @@ typeof(pi);
 ```
 > number
 
+### Aula 16: Exercícios - Const e Let
+
+Considere o código abaixo:
+```javascript
+console.log(nome + " " + sobrenome + " tem " + idade + " anos, pesa " + peso + "kg\n");
+console.log("tem " + altura + " de altura e seu IMC é de " + imc + "\n");
+console.log(nome + " nasceu em " + anoNascimento);
+```
+
+Ele significa a mesma coisa que o seguinte:
+```javascript
+console.log(`${nome} está testando template string, ela possui ${idade} anos.`);
+```
+
+O recurso de colocar uma variável dentro da String através de crases e ${nome_variável} se chama **template strings**.
