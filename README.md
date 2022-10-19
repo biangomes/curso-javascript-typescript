@@ -70,3 +70,30 @@ O recurso de colocar uma variável dentro da String através de crases e ${nome_
 - `variavel;`
 
 Porém, **não se recomenda usar a segunda e quarta forma**.
+
+### Aula 19: Tipos de dados primitivos
+
+Em JavaScript puro não utilizamos tipagem de dados. Java, por exemplo, colocamos: 
+```java
+String nomeAluno = "Beatriz";
+double pi = 3.14;
+```
+
+Em Javascript é simplesmente:
+```javascript
+const nomeAluno = "Beatriz";    // string
+const numPi = 3.1415;       // number
+const aprovado = false      // booleano
+```
+
+Outro detalhe também é que apesar de existirem diversos domínios no conjunto numérico, não explicitamos se é um **inteiro**, **real**, **racional**, etc.
+
+Outro ponto a se observar também é a **difrença entre `null` e `undefined`**. Considere a variável abaixo:
+```javascript
+let nomeAluno;
+let emailAluno = null;
+```
+
+O primeiro será settado por *default* o valor de **undefined**. Enquanto o segundo é explicitado como **null**. Em ambos os casos, **não existe referência para a memória**.
+
+*Obs.: só é possível criar uma variável sem inicializá-la se esta for `let`.*
