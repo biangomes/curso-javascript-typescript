@@ -144,3 +144,29 @@ if (doceFavorito === "chocolate") {
 }
 ```
 
+#### Funções
+
+Funções são uma forma de encapsular funcionalidades de maneira que possamos reutilizar posteriormente. A expressão abaixo é uma função:
+```javascript
+let minhaVariavel = document.querySelector("h1");
+```
+
+```javascript
+function multiplica(num1, num2) {
+    return num1*num2;
+}
+
+// chamado a funcao multiplica
+multiplica(2, 2);
+multiplica(1000, 0.10);
+```
+
+#### Eventos
+
+Os eventos são uma forma de interagir em um site, são estruturas que percebem elementos no navegador. Por exemplo, quando você quer exibir um modal toda vez que passar por um botão ou apertar um botão. Esses procedimentos se chamam **eventos**. Vejamos um exemplo:
+
+```javascript
+document.querySelector('html').onclick = function() {
+    alert('Ai! Para de me cutucar!');
+}
+```
