@@ -97,3 +97,50 @@ let emailAluno = null;
 O primeiro será settado por *default* o valor de **undefined**. Enquanto o segundo é explicitado como **null**. Em ambos os casos, **não existe referência para a memória**.
 
 *Obs.: só é possível criar uma variável sem inicializá-la se esta for `let`.*
+
+### Conteúdo extra
+
+Segundo [Mozilla MDN](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics#:~:text=JavaScript%20%C3%A9%20a%20linguagem%20de,%2C%20estilo%20din%C3%A2mico%2C%20anima%C3%A7%C3%B5es), existem cerca de 5 tipos de dados diferentes no Javascript. São eles:
+
+- String: uma sequência de caracteres. `let minhaVariavel = 'Bob';`
+
+- Number: números inteiros e reais. `let minhaVariavel = 10;`
+
+- Boolean: valor lógico, em que pode ser true ou false. `let minhaVariavel = true;`
+
+- Array: uma estrutura que permite armazenar vários valores em uma única variável. 
+```javascript
+let meuArray = ['Bob', 1, 4.10, 'Josh'];
+
+console.log(meuArray[0]);
+```
+
+A saída do `console.log(meuArray[0])` é:
+> Bob
+
+
+- Object: tudo em javascript é um **objeto** e pode ser armazenado em uma variável. Todos os exemplos acima são Objects também. `let minhaVariavel = document.querySelector('h1');`
+
+
+Com relação aos operadores matemáticos, eles seguem o padrão de * para multiplicação, + para adição, - para subtração e / para divisão. O adendo é relacionado aos operadores relacionais, onde teremos algumas diferenças do padrão.
+
+- **Atribuição:** `=`
+
+- **Operador de igualdade:** `===`
+
+- **Negação, não igual:** `!`, `!==`
+
+#### Condicionais
+
+Uma estrutura condicional é da seguinte forma:
+
+```javascript
+let doceFavorito = "Chocolate";
+
+if (doceFavorito === "chocolate") {
+    alert("Opa, eu amo chocolate também!");
+} else {
+    alert("O meu doce favorito é açaí!");
+}
+```
+
