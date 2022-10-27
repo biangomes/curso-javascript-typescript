@@ -98,6 +98,28 @@ O primeiro será settado por *default* o valor de **undefined**. Enquanto o segu
 
 *Obs.: só é possível criar uma variável sem inicializá-la se esta for `let`.*
 
+Existe uma diferença entre tipos de dados primitivos e tipos de dados passados por referência. Quando se é por referência, ambos apontam para a mesma posição da memória e, caso um seja alterado, o outro também será. Veja os códigos abaixo.
+
+```javascript
+const a = [1, 2];
+const b = a;
+console.log(a, b);
+```
+> [1, 2] [1, 2]
+
+```javascript
+b.push(4);
+console.log(a, b);
+```
+
+O resultado **adequado** seria:
+> [1, 2] [1, 2, 4]
+
+Porém, o que, de fato, resulta é:
+> [1, 2, 4] [1, 2, 4]
+
+Isso se deve ao fato de apontarem para a **mesma posição da memória**.
+
 ### Conteúdo extra
 
 Segundo [Mozilla MDN](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics#:~:text=JavaScript%20%C3%A9%20a%20linguagem%20de,%2C%20estilo%20din%C3%A2mico%2C%20anima%C3%A7%C3%B5es), existem cerca de 5 tipos de dados diferentes no Javascript. São eles:
