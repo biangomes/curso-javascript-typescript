@@ -98,7 +98,7 @@ O primeiro será settado por *default* o valor de **undefined**. Enquanto o segu
 
 *Obs.: só é possível criar uma variável sem inicializá-la se esta for `let`.*
 
-Existe uma diferença entre tipos de dados primitivos e tipos de dados passados por referência. Quando se é por referência, ambos apontam para a mesma posição da memória e, caso um seja alterado, o outro também será. Veja os códigos abaixo.
+Existe uma diferença entre tipos de dados primitivos e tipos de dados passados por referência. Quando se é por referência, o segundo objeto passa a ser uma cópia do outro. Veja os códigos abaixo.
 
 ```javascript
 const a = [1, 2];
@@ -119,6 +119,10 @@ Porém, o que, de fato, resulta é:
 > [1, 2, 4] [1, 2, 4]
 
 Isso se deve ao fato de apontarem para a **mesma posição da memória**.
+
+### Aula 21: Alert, confirm e prompt (Navegador)
+
+
 
 ### Conteúdo extra
 
