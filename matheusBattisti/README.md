@@ -54,3 +54,33 @@ console.log(arr2[4]);
 arr[2] = false;
 console.log(arr);
 ```
+
+### Aula 14: Else if e else
+Caso a instrução do `if` seja negativa, podemos adicionar `else` que é a outra condicional a ser executada.
+Assim, criamos uma **bifurcação** no código.
+
+Já a instrução `else if` nega a anterior e faz uma nova comparação, adicionando, portanto, mais um bloco de código.
+
+Código da aula:
+```javascript
+var nome = "Beatriz";
+
+if (nome == "Pedro") {
+    console.log("O nome dele é Pedro!");
+}  else if (nome == "João") {
+    console.log("O nome dele é João e está na lista!");
+}
+else {
+    console.log("O nome dele não é Pedro!");
+}
+
+let idade=19;
+
+if (idade > 20) {
+    console.log("Ele pode entrar na festa");
+} else if (idade >= 18) {
+    console.log("Ele só pode entrar com autorização!");
+} else {
+    console.log("Ele não pode entrar na festa!")
+}
+```
