@@ -122,8 +122,63 @@ Isso se deve ao fato de apontarem para a **mesma posição da memória**.
 
 ### Aula 21: Alert, confirm e prompt (Navegador)
 
+O `alert` dispara uma mensagem de alerta no navegador:
 
+![alert](img/alert.png)
 
+**Sintaxe:**
+```javascript
+window.alert("Você está sujeito aos termos e condições");
+```
+
+Já o `confirm` exibe uma mensagem de confirmação no navegador.
+
+![confirm](img/confirm.png)
+
+**Sintaxe:**
+```javascript
+window.confirm("Clique 'ok' para prosseguir");
+```
+
+O `prompt` permite um texto de entrada.
+
+![prompt](img/prompt.png)
+
+**Sintaxe:**
+```javascript
+window.prompt("Usuário: ");
+```
+
+Todas três instruções acima são chamadas de **funções** e o que é passado a elas entre parênteses são os **argumentos**. Na realidade, como o `alert`, `confirm` e `prompt` estão dentro de `window`, dizemos que este último é a função e os três acima são os **métodos**.
+
+A função `confirm` retorna um valor **booleano**.
+
+Fazendo o código abaixo:
+```javascript
+let num1 = prompt('digite um número: ');
+let num2 = prompt('digite outro numero: ');
+
+num1+num2;
+
+let saida = num1+num2;
+saida
+```
+> digite um número: 2
+> digite outro numero: 10
+> 210
+
+Ao invés de executar a operação de adição, ele concatena as strings. Isto ocorre, pois todos os dados de entrada vêm como string.
+
+Para corrigir o equívoco acima, devemos declarar fazendo um `parser`.
+
+```javascript
+num1 = parseFloat(num1);
+num2 = parseFloat(num2);
+let saidaFloat = num1+num2;
+
+saidaFloat
+```
+> 12
 ### Conteúdo extra
 
 Segundo [Mozilla MDN](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics#:~:text=JavaScript%20%C3%A9%20a%20linguagem%20de,%2C%20estilo%20din%C3%A2mico%2C%20anima%C3%A7%C3%B5es), existem cerca de 5 tipos de dados diferentes no Javascript. São eles:
