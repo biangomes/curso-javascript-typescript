@@ -7,4 +7,6 @@ const temp = varA;
 varA=varB;
 varB=varC;
 varC=temp;
+
+// [varA, varB, varC] = [varB, varC, varA];  => outra solução
 console.log(varA, varB, varC);
