@@ -179,6 +179,55 @@ let saidaFloat = num1+num2;
 saidaFloat
 ```
 > 12
+### Aula 24: mais sobre strings
+
+Como escapar string?
+
+```javascript
+let doisString = "Um \"texto\"";        // escapando string
+
+console.log(doisString);
+
+// Inserir uma barra invertida no texto
+let tresString = "Um \\texto";
+console.log(tresString);
+```
+
+> Um "texto"
+>
+> Um \texto
+
+Função `slice`:
+
+```javascript
+let caminhoDeOutroArquivo = "C:\\\Users\\\beatr\\\Documents\\\input.csv";
+console.log(caminhoDeOutroArquivo.slice(caminhoDeOutroArquivo.length - 3, caminhoDeOutroArquivo.length));
+```
+
+> csv
+
+Função `charAt()`:
+
+```javascript
+let caminhoDoArquivo = "C:\\\Users\\\beatr\\\Documents\\\input.csv";
+console.log(caminhoDoArquivo.charAt(caminhoDoArquivo.length-3));
+```
+
+> c
+
+Função `concat`:
+
+Faz a mesma coisa que concatenar strings com `+`:
+
+```javascript
+let poesia = "Há uma pedra no meio do caminho";
+let continuaPoesia = "No meio do caminho há uma pedra";
+console.log(poesia + "\n" + continuaPoesia);
+console.log("Usando concat: \n\n" + poesia.concat("\n" + continuaPoesia));
+```
+
+
+
 ### Conteúdo extra
 
 Segundo [Mozilla MDN](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics#:~:text=JavaScript%20%C3%A9%20a%20linguagem%20de,%2C%20estilo%20din%C3%A2mico%2C%20anima%C3%A7%C3%B5es), existem cerca de 5 tipos de dados diferentes no Javascript. São eles:
