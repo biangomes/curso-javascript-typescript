@@ -24,7 +24,14 @@ console.log(poesia + "\n" + continuaPoesia);
 console.log("Usando concat: \n\n" + poesia.concat("\n" + continuaPoesia));
 
 
+// Index de uma palavra
+let nome = "Beatriz Nascimento Gomes";
+console.log(nome.indexOf("Gomes"));
+console.log(nome.indexOf("o", 18));  // Primeira ocorrência do caractere "o" a partir do index 3
+// lastIndexOf
+console.log(nome.lastIndexOf("o", 19)); // Primeira ocorrência do caractere "o" do fim pro início a partir do index 19
 
-let nomeArquivo = input("nome do arquivo: ");
-let extensaoDoArquivo = input("extensão do arquivo: ");
-console.log(nomeArquivo.concat("."+extensaoDoArquivo));
+
+// Expressão regular
+console.log(nome.match(/[a-z]/g));
+console.log(nome.search(/[a-z]/g));
