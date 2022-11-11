@@ -226,7 +226,44 @@ console.log(poesia + "\n" + continuaPoesia);
 console.log("Usando concat: \n\n" + poesia.concat("\n" + continuaPoesia));
 ```
 
+### Aula 16: arrays
 
+Um array é uma coleção de dados. Exemplo: `const meuArray = ["nome1", "nome2", "nome3", 3, ["fundamental", "médio", "superior"], true, null]`.
+No exemplo acima é possível perceber que existem diferentes tipos de dados dentro de um array. Isso quer dizer que é **heterogêneo**. Apesar de não ser considerado
+uma boa prática de programação.
+
+Arrays tambem são indexados, mas são por elementos. Considerando o array `const nomes = ['bea', 'joao', 'luis']`, o `nomes[0] = bea; nomes[1] = joao`.
+
+Eu fiz um teste para ver a exibição de elementos de array, usando `forEach` e o `for` usual. A conclusão é que o primeiro **não** exibe o **índice**, apenas elemento ao contrário do segundo.
+
+```javascript
+alunos.forEach( (elemento) => console.log(`Elemento cujo índice é ${elemento}: ${alunos[elemento]}`));
+```
+> Elemento cujo índice é Luiz: undefined index.js:8:39
+> 
+> Elemento cujo índice é Maria: undefined index.js:8:39
+> 
+> Elemento cujo índice é João: undefined index.js:8:39
+
+```javascript
+for(i=0; i<alunos.length; i++) {
+    console.log(`Elemento cujo índice é ${i}: ${alunos[i]}`);
+}
+```
+> Elemento cujo índice é 0: Luiz index.js:12:13
+> 
+> Elemento cujo índice é 1: Maria index.js:12:13
+>
+> Elemento cujo índice é 2: João index.js:12:13
+
+
+Para inserir elementos dentro de um array basta `alunos[3] = "bea gomes";`. O `3` se refere à quarta posição (0, 1, 2, 3) do array. Se não soubermos o tamanho total
+do array podemos fazer da seguinte forma: `alunos[alunos.length] = "ana";`.
+
+Outra forma é utilizar a função `push`. Esta adiciona um elemento no final do array sem precisar saber a posição.
+```javascript
+alunos.push('Otávio');
+```
 
 ### Conteúdo extra
 
