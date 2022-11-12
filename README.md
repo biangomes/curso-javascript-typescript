@@ -265,6 +265,8 @@ Outra forma é utilizar a função `push`. Esta adiciona um elemento no final do
 alunos.push('Otávio');
 ```
 
+O método `unshift` adiciona um elemento no índice 0 do array 
+
 ### Conteúdo extra
 
 Segundo [Mozilla MDN](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics#:~:text=JavaScript%20%C3%A9%20a%20linguagem%20de,%2C%20estilo%20din%C3%A2mico%2C%20anima%C3%A7%C3%B5es), existem cerca de 5 tipos de dados diferentes no Javascript. São eles:

@@ -22,6 +22,12 @@ alunos[alunos.length] = "teste 4";
 console.log(alunos);
 alunos.push='Otávio';
 console.log(alunos);
+
+// alterando o elemento do índice 0 do array
+alunos.unshift('Luíza');
+alunos.unshift('Sérgio');
+
+
 // testes ...
 // console.log("forEach: ");
 // alunos.forEach( (elemento) => console.log(`Elemento cujo índice é ${elemento}: ${alunos[elemento]}`));
