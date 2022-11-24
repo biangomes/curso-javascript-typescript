@@ -28,6 +28,11 @@ alunos.unshift('Luíza');
 alunos.unshift('Sérgio');
 
 
+// removendo o último elemento e guardando dentro de uma variável
+const alunoRemovido = alunos.pop();
+console.log(alunoRemovido);     // exibindo o aluno removido
+console.log(alunos);        // novo array depois de removido
+
 // testes ...
 // console.log("forEach: ");
 // alunos.forEach( (elemento) => console.log(`Elemento cujo índice é ${elemento}: ${alunos[elemento]}`));

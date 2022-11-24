@@ -265,7 +265,14 @@ Outra forma é utilizar a função `push`. Esta adiciona um elemento no final do
 alunos.push('Otávio');
 ```
 
-O método `unshift` adiciona um elemento no índice 0 do array 
+O método `unshift` adiciona um elemento no índice 0 do array.
+
+Podemos **remover** elementos dentro do array também. Através do método `pop()`, podemos remover do **fim** do array.
+```javascript
+const alunoRemovido = alunos.pop();
+```
+
+A constante `alunoRemovido` terá como valor o elemento removido, que era o **último** elemento do array.
 
 ### Conteúdo extra
 
