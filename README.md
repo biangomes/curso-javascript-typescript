@@ -226,7 +226,7 @@ console.log(poesia + "\n" + continuaPoesia);
 console.log("Usando concat: \n\n" + poesia.concat("\n" + continuaPoesia));
 ```
 
-### Aula 16: arrays
+### Aula 29: arrays
 
 Um array é uma coleção de dados. Exemplo: `const meuArray = ["nome1", "nome2", "nome3", 3, ["fundamental", "médio", "superior"], true, null]`.
 No exemplo acima é possível perceber que existem diferentes tipos de dados dentro de um array. Isso quer dizer que é **heterogêneo**. Apesar de não ser considerado
@@ -273,6 +273,11 @@ const alunoRemovido = alunos.pop();
 ```
 
 A constante `alunoRemovido` terá como valor o elemento removido, que era o **último** elemento do array.
+
+Quando usamos a expressão `delete alunos[1]`, ele remove o elemento da posição 1 e deixa aquele espaço como `undefined`. Caso peça para imprimir o array, é colocado naquele espaço `<1 empty slot>`.
+
+Quando digitamos `console.log(typeof alunos);`, esperamos que ele retorne a informação que `alunos` é um `array`, porém **tudo** no javascript são **Objects**, **objetos**. Portanto, o retorno do console log acima é `Object`.
+Se quisessemos confirmar que `alunos` é um `array`, faríamos: `console.log(alunos istanceof Array);`.
 
 ### Conteúdo extra
 
