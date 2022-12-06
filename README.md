@@ -279,6 +279,8 @@ Quando usamos a expressão `delete alunos[1]`, ele remove o elemento da posiçã
 Quando digitamos `console.log(typeof alunos);`, esperamos que ele retorne a informação que `alunos` é um `array`, porém **tudo** no javascript são **Objects**, **objetos**. Portanto, o retorno do console log acima é `Object`.
 Se quisessemos confirmar que `alunos` é um `array`, faríamos: `console.log(alunos istanceof Array);`.
 
+### Aula 108. Promises
+**Data:** 06/12/2022
 
 
 ### Conteúdo extra
@@ -353,3 +355,13 @@ document.querySelector('html').onclick = function() {
     alert('Ai! Para de me cutucar!');
 }
 ```
+
+#### Promises
+**Data:** 06/12/2022
+**Referência:** https://www.youtube.com/watch?v=87gWRVGRZ5o
+
+**Promises** são como promessas da vida real, em que ela espera algum retorno.
+
+Para criar uma promise **instanciamos** a classe **`Promise`**, em que leva dois argumentos **resolve** e **reject**. Solução e erro, respectivamente. Encadeamos o processo utilizando o método **`then`**. 
+
+Alguns recursos de JS (Fetch API) e bibliotecas retornam Promises.
