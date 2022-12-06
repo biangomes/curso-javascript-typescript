@@ -41,3 +41,6 @@ console.log(alunos);        // novo array depois de removido
 // for(i=0; i<alunos.length; i++) {
 //     console.log(`Elemento cujo índice é ${i}: ${alunos[i]}`);
 // }
+
+console.log(typeof alunos);     // object
+console.log(alunos instanceof Array);       // true

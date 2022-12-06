@@ -279,6 +279,8 @@ Quando usamos a expressão `delete alunos[1]`, ele remove o elemento da posiçã
 Quando digitamos `console.log(typeof alunos);`, esperamos que ele retorne a informação que `alunos` é um `array`, porém **tudo** no javascript são **Objects**, **objetos**. Portanto, o retorno do console log acima é `Object`.
 Se quisessemos confirmar que `alunos` é um `array`, faríamos: `console.log(alunos istanceof Array);`.
 
+
+
 ### Conteúdo extra
 
 Segundo [Mozilla MDN](https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/JavaScript_basics#:~:text=JavaScript%20%C3%A9%20a%20linguagem%20de,%2C%20estilo%20din%C3%A2mico%2C%20anima%C3%A7%C3%B5es), existem cerca de 5 tipos de dados diferentes no Javascript. São eles:
