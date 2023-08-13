@@ -297,6 +297,8 @@ Para executar a função, basta chamá-la:
 nomeDaFuncao(argumento1, argumento2);
 ```
 
+Uma função **pode** retornar valores.
+
 
 ### Conteúdo extra
 
